@@ -1,8 +1,6 @@
 FROM richardqa/bro1:v1
 MAINTAINER Richard Quinto <richardqa@gmail.com>
-LABEL Description="Radius Local de tetsting con tags" Vendor="Inictel Provider" Version="1.1"
-RUN apt-get update
-RUN apt-get -y remove freeradius
-RUN apt-get install hydra
+LABEL Description="Radius Local de tetsting con tags3" Vendor="Inictel Provider3" Version="1.3"
+RUN apt-get -y install freeradius
+RUN apt-get -y install hydra
 WORKDIR /home
-
